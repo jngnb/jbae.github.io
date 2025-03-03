@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Jeongin's Desktop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>This is my personal website hosted on GitHub Pages!</p>
+
+    <div class="desktop">
+        <!-- Desktop Icons -->
+        <div class="icon" onclick="openWindow('welcome', 'Welcome', 'windows/welcome.html')">
+            <img src="images/welcome.png" alt="Welcome">
+            <span>welcome</span>
+        </div>
+        <div class="icon" onclick="openWindow('about', 'About Me', 'windows/about.html')">
+            <img src="images/about.png" alt="About">
+            <span>about me</span>
+        </div>
+        <div class="icon" onclick="openWindow('internships', 'Internships', 'windows/internships.html')">
+            <img src="images/internships.png" alt="Internships">
+            <span>internships</span>
+        </div>
+        <div class="icon" onclick="openWindow('projects', 'Projects', 'windows/projects.html')">
+            <img src="images/projects.png" alt="Projects">
+            <span>projects</span>
+        </div>
+        <div class="icon" onclick="openWindow('resume', 'Resume', 'windows/resume.html')">
+            <img src="images/resume.png" alt="Resume">
+            <span>resume</span>
+        </div>
+    </div>
+
+    <!-- Taskbar -->
+    <div class="taskbar">Start</div>
+
+    <script src="script.js"></script>
 </body>
 </html>
